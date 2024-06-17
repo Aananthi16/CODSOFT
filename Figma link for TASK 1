@@ -1,2 +1,421 @@
+#The link to the mobile app UI.
 https://www.figma.com/board/JwTJ6MwSHVN4lFSnida34D/UI-of-mobile-app?node-id=0-1&t=F9mz43P0BCK8t5gG-1
-The link to the mobile app UI.
+#the html code of login and signup page 
+
+<!DOCTYPE HTML>
+<html</html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>
+        LOGIN 
+    </title>
+</head>
+<link rel="icon" href="logo.jpg">
+<style>
+* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+		background-image:url("bg2.jpeg");
+    height: 100%; 
+  width:100%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+	.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+    .background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+    .nav list  {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+      overflow: hidden;
+      background-color: black ;
+      }
+
+     li {
+      float: left;
+     }
+
+         li a {
+            display:block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+          background-color:black;
+        }
+        .rightnav {
+			width: 50%;
+      align-items: top right;
+	
+			
+
+		
+		}
+        
+		#search {
+			padding: 4px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 6px;
+      align-items: top right;
+   
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+			display:inline-flex;
+      align-items: top right;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align:middle;
+      align-items: top right;
+		}
+		.logo {
+			display: flex;
+			justify-content: left;
+			align-items: top left;
+		}
+
+		.logo img {
+			width: 100px;
+			border-radius: 30px;
+			border:solid black 3px;
+			top:17px;
+			left:20px;
+			position:absolute;
+		}
+		
+    .top-left {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: large;
+  
+  color: rgb(0, 0, 0);
+  
+}
+</style>
+<Body>
+    <nav class="navbar background">
+
+	    
+    
+        <div class="logo">
+				<img src= "logo.jpg"  style="align-items :left;">
+		</div>
+		
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Business</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+	<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm"> Search </button>
+</div>
+	
+</nav>
+<div class="top-left">
+	<br>
+	<br>
+	<br>
+	<h4>GUIDINGO</h4>
+	</div>
+ <br>
+    <form  name="f1">
+        <div class="container">
+            <h2>
+               LOGIN
+            </h2>
+            <br>
+            <p>
+                Kindly fill this form to register
+            </p><br>
+            <label>
+               <i>USERNAME</i> 
+            </label>
+            <input type="text" placeholder=" Enter Name" name="name"/>
+           <label>
+               <i>PASSWORD</i>
+            </label>
+            <input type="password" placeholder=" Enter password" name="pwd"/>
+            <button type="submit" onclick="press()"> Register</button> 
+
+
+            
+
+        </div>
+        <div>
+            <p>New Here?<a href="#">Signup</a></p>
+        </div>
+    </form>
+    <script>
+        function press(){
+        var str1=f1.name.value;
+      
+        var str2=f1.pwd.value;
+           
+
+        if(str1.length==0)
+        {
+            window.alert("Name is missing");
+            return;
+        }
+        for(var i=0;i<str1.length;i++)
+        {
+            if(str1.charCodeAt(i)>=65 && str1.charCodeAt(i)<=122){
+                continue;
+            }
+            else{
+                window.alert("Name-field Wrong");
+                break;
+            }}
+        if(str2.length==0)
+        {
+            window.alert("Password is missing");
+            return;
+        }
+       
+}
+        
+</script>
+</Body>
+</html>
+
+#LOGIN PAGE 
+
+<!DOCTYPE HTML>
+<html</html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>
+        LOGIN 
+    </title>
+</head>
+<link rel="icon" href="logo.jpg">
+<style>
+* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+		background-image:url("bg2.jpeg");
+    height: 100%; 
+  width:100%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+	.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+    .background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+    .nav list  {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+      overflow: hidden;
+      background-color: black ;
+      }
+
+     li {
+      float: left;
+     }
+
+         li a {
+            display:block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+          background-color:black;
+        }
+        .rightnav {
+			width: 50%;
+      align-items: top right;
+	
+			
+
+		
+		}
+        
+		#search {
+			padding: 4px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 6px;
+      align-items: top right;
+   
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+			display:inline-flex;
+      align-items: top right;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align:middle;
+      align-items: top right;
+		}
+		.logo {
+			display: flex;
+			justify-content: left;
+			align-items: top left;
+		}
+
+		.logo img {
+			width: 100px;
+			border-radius: 30px;
+			border:solid black 3px;
+			top:17px;
+			left:20px;
+			position:absolute;
+		}
+		
+    .top-left {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: large;
+  
+  color: rgb(0, 0, 0);
+  
+}
+</style>
+<Body>
+    <nav class="navbar background">
+
+	    
+    
+        <div class="logo">
+				<img src= "logo.jpg"  style="align-items :left;">
+		</div>
+		
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Business</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+	<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm"> Search </button>
+</div>
+	
+</nav>
+<div class="top-left">
+	<br>
+	<br>
+	<br>
+	<h4>GUIDINGO</h4>
+	</div>
+ <br>
+    <form  name="f1">
+        <div class="container">
+            <h2>
+               LOGIN
+            </h2>
+            <br>
+            <p>
+                Kindly fill this form to register
+            </p><br>
+            <label>
+               <i>USERNAME</i> 
+            </label>
+            <input type="text" placeholder=" Enter Name" name="name"/>
+           <label>
+               <i>PASSWORD</i>
+            </label>
+            <input type="password" placeholder=" Enter password" name="pwd"/>
+            <button type="submit" onclick="press()"> Register</button> 
+
+
+            
+
+        </div>
+        <div>
+            <p>New Here?<a href="#">Signup</a></p>
+        </div>
+    </form>
+    <script>
+        function press(){
+        var str1=f1.name.value;
+      
+        var str2=f1.pwd.value;
+           
+
+        if(str1.length==0)
+        {
+            window.alert("Name is missing");
+            return;
+        }
+        for(var i=0;i<str1.length;i++)
+        {
+            if(str1.charCodeAt(i)>=65 && str1.charCodeAt(i)<=122){
+                continue;
+            }
+            else{
+                window.alert("Name-field Wrong");
+                break;
+            }}
+        if(str2.length==0)
+        {
+            window.alert("Password is missing");
+            return;
+        }
+       
+}
+        
+</script>
+</Body>
+</html>
+
+
